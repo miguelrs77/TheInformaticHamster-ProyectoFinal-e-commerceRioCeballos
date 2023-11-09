@@ -1,0 +1,32 @@
+
+<!-- Tabla de Preguntas -->
+<div class="container">
+    <div class="title">
+        <h1>Lista de Preguntas</h1>
+        <button type="button" class="btn btn-success" routerLink="/encuestaadd">Agregar Pregunta</button>        
+    </div>
+
+    <table *ngIf="listPreguntas.length > 0" class ="table table-dark">
+        <thead>
+          <tr>
+              <th scope="col">#</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Pregunta</th>
+              <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pregunta of listPreguntas" class="table-active">
+              <th scope="row">{{ pregunta.id }}</th>
+              <td>{{ pregunta.category }}</td>
+              <td>{{ pregunta.question }}</td>
+              <td>
+                  <button routerLink="/preguntaedit/{{ pregunta.id }}" type="button" class="btn btn-info btn-sm">Editar</button>
+                  <button (click)="deletePregunta(pregunta.id!)" type="button" class="btn btn-danger btn-sm ms-2">Borrar</button>
+              </td>
+          </tr>
+        </tbody>
+    </table>
+      <h5 *ngIf="listPreguntas.length == 0">No hay Preguntas para mostrar</h5>
+</div>
+<!-- Fin Tabla de Preguntas -->

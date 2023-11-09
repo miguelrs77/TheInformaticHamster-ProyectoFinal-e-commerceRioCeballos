@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="row mt-4">
+    <div class="col-lg-4 offset-lg-4">
+        <div class="card text-bg-dark mb-3" style="max-width: 25rem;">
+          <div class="card-header text-center">{{ operacion }} Carta Informativa</div>
+            <div class="card-body">
+                <form [formGroup]="formInfoCards" (ngSubmit)="addInfoCard()">  
+                    <!-- TODO DROPDOWN con opciones -->
+                    <input formControlName="category" type="text" class="form-control mt-3" placeholder="Categoria">
+                    <span *ngIf="formInfoCards.get('category')?.hasError('required') && formInfoCards.get('category')?.touched">
+                        La <strong>Categoria</strong> es requerida
+                    </span>
+
+                    <input formControlName="title" type="text" class="form-control mt-3" placeholder="Titulo">
+                    <span *ngIf="formInfoCards.get('title')?.hasError('required') && formInfoCards.get('title')?.touched">
+                        El <strong>Titulo</strong> es requerido
+                    </span>
+
+                    <!-- TODO permitir MIN-MAX de caracteres -->
+                    <input formControlName="description" type="text" class="form-control mt-3" placeholder="Descripción">
+                    <span *ngIf="formInfoCards.get('description')?.hasError('required') && formInfoCards.get('description')?.touched">
+                        La <strong>Descripción</strong> es requerida
+                    </span>
+
+                    <!-- TODO ENLAZAR con cloudinary -->
+                    <input formControlName="image" type="text" class="form-control mt-3" placeholder="Imagen">
+                    <!-- <span *ngIf="formInfoCards.get('image')?.hasError('required') && formInfoCards.get('image')?.touched">
+                        La <strong>Imagen</strong> es requerida
+                    </span> -->
+                    <div class="row mt-3 text-center">
+                        <div class="col-lg-6">
+                            <button routerLink="/infocard" type="button" class="btn btn-secondary">Volver</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button [disabled]="formInfoCards.invalid" type="submit" class="btn btn-success">Aceptar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

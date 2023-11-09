@@ -1,0 +1,56 @@
+<div class="container">
+  <section class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Formulario de Satisfacción</h1>
+      <p class="text-center">Municipalidad de Mina Clavero</p>
+    </div>
+  </section>
+
+  <!--  PREGUNTAS BD MySQL  -->
+  <section *ngFor="let pregunta of listPreguntas" class="row">
+    <div class="col-md-12">
+      <section class="row">
+        <div class="col-md-8">
+          <p>{{ pregunta.question }}</p>
+        </div>
+        <div class="col-md-4">
+          <select class="form-control">
+            <option value="5">Muy Buena</option>
+            <option value="4">Buena</option>
+            <option value="3">Regular</option>
+            <option value="2">Mala</option>
+            <option value="1">Muy Mala</option>
+            <option value="0">No Responde</option>
+          </select>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-md-12">
+      <h3>Otra forma de dar respuestas</h3>
+      <p></p>
+    </div>
+  </section>
+  
+  <!--  Otra forma de dar respuestas  -->
+  <section *ngFor="let pregunta of listPreguntas" class="row">
+    <div class="col-md-12">
+      <section class="row">
+        <div class="col-md-8">
+          <p>{{ pregunta.question }}</p>
+        </div>
+        <div class="col-md-2">
+          <label class="radio">
+            <input type="radio" name="pregunta1" id="pregunta1a" value="SI">Si
+          </label>
+        </div>
+        <div class="col-md-2">
+          <label class="radio">
+            <input type="radio" name="pregunta1" id="pregunta1a" value="SI">NO
+          </label>
+        </div>
+      </section>
+    </div>
+  </section>

@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="row mt-4">
+    <div class="col-lg-4 offset-lg-4">
+        <div class="card text-bg-dark mb-3" style="max-width: 25rem;">
+          <div class="card-header text-center">{{ operacion }}Agregar Pregunta</div>
+            <div class="card-body">
+                <form [formGroup]="formPreguntas" (ngSubmit)="addPregunta()">    
+                   
+                    <input formControlName="category" type="text" class="form-control mt-3" placeholder="Categoria">
+                    <span *ngIf="formPreguntas.get('category')?.hasError('required') && formPreguntas.get('category')?.touched">
+                        La <strong>Categoria</strong> es requerida
+                    </span>
+
+                    <input formControlName="question" type="text" class="form-control mt-3" placeholder="Pregunta">
+                    <span *ngIf="formPreguntas.get('question')?.hasError('required') && formPreguntas.get('question')?.touched">
+                        La <strong>Pregunta</strong> es requerida
+                    </span>
+                    
+                    <div class="row mt-3 text-center">
+                        <div class="col-lg-6">
+                            <button routerLink="/encrud" type="button" class="btn btn-secondary">Volver</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button [disabled]="formPreguntas.invalid" type="submit" class="btn btn-success">Aceptar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

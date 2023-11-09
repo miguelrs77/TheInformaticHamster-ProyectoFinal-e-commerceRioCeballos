@@ -1,0 +1,10 @@
+ <!-- ngIf="infoCard !== null (infoCard no es null, elemento HTML al que aplica *ngIf se renderizara. Si infoCard = null,elemento HTML no renderiza) -->
+<div class="col-lg-4 mb-4" *ngIf="infoCard !== null">
+  <div class="card w-80">
+    <img [src]="infoCard.image" alt="Info-turismo" class="card-img-top card-image">
+      <div class="card-body">
+        <h5 class="card-title">{{ infoCard.title }}</h5>
+        <p class="card-text">{{ infoCard.description }}</p>
+    </div>
+  </div>
+</div>
