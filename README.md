@@ -19,7 +19,7 @@ Dentro del archivo package.json estan los scripts:
 
 2) En la carpeta Back-End npm run typescript (Que va a visualizar los cambios generados)
 
-3) En la carpeta Back-End hay una carpeta llamaba BD que dentro trae una archivo conection.TS, ahi dentro deben colocar el nombre de usuario que tienen en MySQL (por dafault: root), el nombre de la base de datos (que debe ser creada con anterioridad) y la misma contraseña con la que abren el MySQL Workbench...   
+3) En la carpeta Back-End hay una archivo llamado .env que dentro trae una archivo conection.TS, ahi dentro deben colocar el nombre de usuario que tienen en MySQL (por dafault: root), el nombre de la base de datos (que debe ser creada con anterioridad) y la misma contraseña con la que abren el MySQL Workbench...   
 
 4) En la carpeta Back-End Ejecutando el comando npm run dev (Va a ejecutar el proyecto)
                           
