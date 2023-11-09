@@ -15,33 +15,33 @@ Este proyecto es una página web dedicada a destacar los encantos de Río Ceball
 
 -
 Tecnologías Utilizadas:
-Node.js
-TypeScript
-Angular
-MySQL
-Bootstratp
-Cloudinary
+Node.js-
+TypeScript-
+Angular-
+MySQL-
+Bootstratp-
+Cloudinary-
 
 -
 Instalación:
-Clona este repositorio.
-Instala las dependencias usando npm: npm install
-Configura la base de datos MySQL con el script proporcionado.
-Ejecuta el servidor con: npm run dev
-Accede a la aplicación desde tu navegador
-Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front
+Clona este repositorio.-
+Instala las dependencias usando npm: npm install-
+Configura la base de datos MySQL con el script proporcionado.-
+Ejecuta el servidor con: npm run dev.-
+Accede a la aplicación desde tu navegador.-
+Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front.-
 -
 Uso:
-Explora las atracciones turísticas de Río Ceballos.
-Navega por la tienda en línea y adquiere recuerdos auténticos.
-Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.
+Explora las atracciones turísticas de Río Ceballos.-
+Navega por la tienda en línea y adquiere recuerdos auténticos.-
+Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.-
 
 -
 Estado del Proyecto:
 Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.
 -
 Contacto:
-Correo Electrónico: [miguelr.s77@gmail.com]
-Issues en GitHub: [link to issues]
+Correo Electrónico: [miguelr.s77@gmail.com].-
+Issues en GitHub: [link to issues].-
 
 
