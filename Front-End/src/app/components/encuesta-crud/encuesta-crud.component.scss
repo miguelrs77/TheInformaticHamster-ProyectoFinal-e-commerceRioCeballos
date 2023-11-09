@@ -4,3 +4,29 @@
     display: flex;
     justify-content: space-between;
 }
+
+.button-nabvar {
+    background-color:white;
+    color: black;
+    border-radius: 10em;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1em 2em;
+    letter-spacing: 1.5px;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.button-nabvar:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 rgb(255, 0, 0);
+    
+};
+
+.button-nabvar:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+};

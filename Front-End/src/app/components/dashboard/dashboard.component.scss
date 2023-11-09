@@ -1,4 +1,78 @@
-.encuestaCrud {
-    height: 150px;
-    width: 200px;
+// Botones del Navbar
+.button-nabvar {
+    background-color:white;
+    color: black;
+    border-radius: 10em;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 1em 2em;
+    letter-spacing: 1.5px;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.button-nabvar:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 rgb(255, 0, 0);
+};
+
+.button-nabvar:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+};
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los divs se envuelvan cuando no haya suficiente espacio */
+    justify-content: space-between; /* Distribuye los divs horizontalmente */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.dashboard, .preguntas {
+    flex: 1; /* Hace que ambos divs ocupen el mismo espacio disponible */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos específicos para tamaños de pantalla pequeños */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Coloca los divs uno encima del otro en pantallas pequeñas */
+    }
+
+    .dashboard, .preguntas {
+        width: 100%; /* Ocupa todo el ancho de la pantalla en pantallas pequeñas */
+    }
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: var(--bs-secondary-color)!important;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ffff00;
+    --bs-btn-border-color: #ffff00;
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-bg: #ffff00;
+    --bs-btn-hover-border-color: #000000;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000000;
+    --bs-btn-active-border-color: #ffff00;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #000000;
+    --bs-btn-disabled-border-color: #000000;
 }

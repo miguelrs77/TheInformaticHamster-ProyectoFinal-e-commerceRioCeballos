@@ -7,7 +7,7 @@ const InfoCard = sequelize.define('InfoCard', {
     primaryKey: true,
     autoIncrement: true
   },
-  image: {
+  imageUrl: {
     type: DataTypes.STRING,
     allowNull: true,
   },

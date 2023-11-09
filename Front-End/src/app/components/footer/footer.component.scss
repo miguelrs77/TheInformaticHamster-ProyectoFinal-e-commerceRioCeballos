@@ -1,0 +1,173 @@
+// Footer
+.footer{
+  opacity: 1; 
+  background-color: rgba(150, 148, 146, 0.5); 
+  color: white;
+  background:  linear-gradient(135deg,rgb(18, 157, 238) 0%,rgb(90, 93, 240) 100%); 
+  text-align: center; 
+  // padding: 20px; 
+}
+
+// Botones
+.btn-footer:link,
+.btn-footer:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    padding: 10px 30px;
+    border: 1.5px solid;
+    border-radius: 1000px;
+    display: inline-block;
+    transition: all .2s;
+    position:relative;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.btn-footer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(9, 255, 0, 0.5);
+}
+
+.btn-footer:active {
+    transform: translateY(-3px);
+}
+
+.btn-footer::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s;
+}
+
+.btn-footer:hover::after {
+    background-color: rgb(13, 185, 65);
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
+}
+
+
+// Imagen del Footer
+.img {
+    max-width: 100px; 
+    height: auto;
+}
+
+// Subtitulo De la Imagen
+.subtitle-img{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #252525;
+}
+
+// Form del Footer
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #0d10d3;
+  background: -webkit-linear-gradient(to right, rgba(230, 231, 233, 0.822), #b2b3b0);
+  background: linear-gradient(to right,  rgba(238, 239, 240, 0.822), #c5c5c4);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+  
+// contacto
+.contacto-info{
+  display: block;
+  margin-top: 10px;
+}
+.contacto{
+  font-size: 15px;
+  color: #252525;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  .title {
+    font-size: 20px;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #252525;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .description {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: rgb(209 213 219);
+  }
+  
+  .form div {
+    max-width: 28rem;
+    margin-top: 1rem;
+    column-gap: 0.5rem;
+  }
+  
+  .form div input {
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(46, 47, 48);
+    padding: 0.5rem 0.875rem;
+    background-color: rgba(255, 255, 255, 0.164);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    flex: 1 1 auto;
+  }
+  
+  .form div input::placeholder {
+    color: rgb(54, 53, 53);
+  }
+  
+  .form div input:focus {
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+ .form div button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgba(23, 62, 121, 0.822);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+}
+
+// Social Links
+.buttons {
+    min-width: 100px;
+    display: flex;
+  }
+  
+.buttons a {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background:  rgba(23, 62, 121, 0.822);
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }

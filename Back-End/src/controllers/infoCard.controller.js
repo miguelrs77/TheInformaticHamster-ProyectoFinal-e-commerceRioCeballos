@@ -1,14 +1,12 @@
 const { infoCardService } = require("../services");
-const cloudinary = require("../utils/cloudinary");
 
-// TODO: Agregar permisos para cada accion. 
 // CREATE INFOCARD
 const createInfoCard = async (req, res ) => {
-  const { title, image, description, category } = req.body
+  const { title, imageUrl, description, category } = req.body
   try {
     const newInfoCard = await infoCardService.createInfoCard({
       title,
-      image,
+      imageUrl,
       description,
       category
     });
@@ -19,13 +17,13 @@ const createInfoCard = async (req, res ) => {
 };
 
 // GET INFOCARD BY ID
-const getIdInfoCard = async (req, res) => {
+const getInfoCardId = async (req, res) => {
   const infoCardId = req.params.infoCardId;
   try {
-    const infoCard = await infoCardService.getIdInfoCard(infoCardId);
+    const infoCard = await infoCardService.getInfoCardId(infoCardId);
     res.status(200).json(infoCard);
   } catch (error) {
-    res.status(500).json({ message: "An error occurred finding InfoCard by ID", error: error.message });
+    res.status(404).json({ message: "An error occurred finding InfoCard by ID", error: error.message });
   }
 };
 
@@ -34,20 +32,19 @@ const findInfoCards = async (_req, res) => {
   try {
     const infoCards = await infoCardService.findInfoCards();
     res.json(infoCards);
-    // res.status(200).json({ message: "Infocards found: ", infoCardsArray });
   } catch (error) {
     res.status(500).json({ message: "An error occurred", error: error.message });
   }
 };
 
 // UPDATE INFOCARD BY ID
-const putInfoCard = async (req, res) => {
+const updateInfoCard = async (req, res) => {
   const infoCardId = req.params.infoCardId;
-  const { title, image, description, category } = req.body;
+  const { title, imageUrl, description, category } = req.body;
   try {
     const newInfoCard = await infoCardService.putInfoCard(infoCardId, {
       title,
-      image,
+      imageUrl,
       description,
       category
     });
@@ -61,11 +58,18 @@ const putInfoCard = async (req, res) => {
 const deleteInfoCard = async (req, res) => {
   const infoCardId = req.params.infoCardId;
   try {
+  const dbInfoCard = await infoCardService.validateInfoCard(infoCardId);
+  if (!dbInfoCard) {
+    return res
+      .status(400)
+      .json({ message: "No infoCard found with this ID: " + infoCardId });
+  } else {
     const infoCard = infoCardService.deleteInfoCard(infoCardId);
-    res.status(200).json({ message: 'infoCard successfully deleted', infoCard });
+    res.status(200).json({ message: 'InfoCard successfully deleted', infoCard });
+  }
   } catch (error) {
     res.status(500).json({ message: "An error occurred deleting InfoCard", error: error.message });
   }
 };
 
-module.exports = { createInfoCard, getIdInfoCard, findInfoCards, putInfoCard, deleteInfoCard };
+module.exports = { createInfoCard, getInfoCardId, findInfoCards, updateInfoCard, deleteInfoCard };

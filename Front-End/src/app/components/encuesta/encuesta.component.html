@@ -1,56 +1,324 @@
-<div class="container">
-  <section class="row">
-    <div class="col-md-12">
-      <h1 class="text-center">Formulario de Satisfacción</h1>
-      <p class="text-center">Municipalidad de Mina Clavero</p>
-    </div>
-  </section>
+<app-navbar></app-navbar>
 
-  <!--  PREGUNTAS BD MySQL  -->
-  <section *ngFor="let pregunta of listPreguntas" class="row">
-    <div class="col-md-12">
-      <section class="row">
-        <div class="col-md-8">
-          <p>{{ pregunta.question }}</p>
-        </div>
-        <div class="col-md-4">
-          <select class="form-control">
-            <option value="5">Muy Buena</option>
-            <option value="4">Buena</option>
-            <option value="3">Regular</option>
-            <option value="2">Mala</option>
-            <option value="1">Muy Mala</option>
-            <option value="0">No Responde</option>
-          </select>
-        </div>
-      </section>
-    </div>
-  </section>
+<!-- Fin Navbar -->
+<main class="formulario container-fluid">
 
-  <section class="row">
-    <div class="col-md-12">
-      <h3>Otra forma de dar respuestas</h3>
-      <p></p>
-    </div>
-  </section>
-  
-  <!--  Otra forma de dar respuestas  -->
-  <section *ngFor="let pregunta of listPreguntas" class="row">
-    <div class="col-md-12">
-      <section class="row">
-        <div class="col-md-8">
-          <p>{{ pregunta.question }}</p>
-        </div>
-        <div class="col-md-2">
-          <label class="radio">
-            <input type="radio" name="pregunta1" id="pregunta1a" value="SI">Si
-          </label>
-        </div>
-        <div class="col-md-2">
-          <label class="radio">
-            <input type="radio" name="pregunta1" id="pregunta1a" value="SI">NO
-          </label>
-        </div>
-      </section>
-    </div>
-  </section>
+<h1 id="title">Formulario de Satisfacción</h1>
+        <p id="description">Municipalidad de Rio Ceballos</p>
+        <form id="survey-form">
+            <div class="main-input">
+                <label for="name" id="name-label">Nombre Apellido</label><br>
+                <input type="text" id="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="main-input">
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" required placeholder="Enter your Email">
+            </div>
+
+            <div class="main-input">
+                <label for="city" id="city-label">Ciudad de procedencia</label><br>
+                <input type="city" id="city" required placeholder="Ciudad">
+            </div>
+
+            <div class="main-input">
+                <p>Motivo de su visita a Rio Ceballos?</p>
+                <select id="dropdown">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="student">Promoción de Estudios</option>
+                    <option value="full-time-job">Vacaciones de Trabajo</option>
+                    <option value="full-time-learner">Vacaciones Culturales</option>
+                    <option value="prefer-not-to-say">Descanso</option>
+                    <option value="other">Otros</option>
+                </select>
+            </div>
+
+            <div class="recommend">
+                <p>¿Ud. vino a Rio Ceballos?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Solo</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe"> En Pareja</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">En Familia</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">En Excursión</label>
+                <br>
+            </div>
+
+            <div class="main-input">
+                <p>¿A través de qué medio conoció el destino Rio Ceballos?</p>
+                <select name="" id="">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="challenges"> Televisión</option>
+                    <option value="projects">Pagina Web</option>
+                    <option value="community">Redes Sociales</option>
+                    <option value="open-source">Medios Graficos</option>
+                    <option value="open-source">otros</option>
+                </select>
+            </div>
+
+            <div id="improvement">
+                <p>¿Por qué eligió Rio Ceballos para pasar sus vacaciones? (select an option)</p>
+                <input type="checkbox" id="front-end" value="front-end">
+                <label for="front-end">Porque ya conocía y le gustó el lugar</label>
+                <br>
+                <input type="checkbox" id="back-end" value="back-end">
+                <label for="back-end">Porque se lo recomendaron</label>
+                <br>
+                <input type="checkbox" id="data-visulization" value="data-visulization">
+                <label for="data-visulization">Porque es un lugar tranquilo para la familia</label>
+                <br>
+                <input type="checkbox" id="challenges" value="challenges">
+                <label for="challenges">Por sus paisajes</label>
+                <br>               
+            </div>
+
+            <div class="recommend">
+                <p>En cuanto a Hospedaje: ¿Ud. llegó a Rio Ceballos?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Con Reserva</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">Sin Reserva</label>
+                <br>
+            <div class="main-input">
+                    <label for="city" id="city-label">A traves de que medio hizo la reserva</label><br>
+                    <input type="city" id="city" required placeholder=" ">
+            </div>
+            </div>
+
+            <div class="recommend">
+                <p>¿Qué tipo de Hospedaje ha tomado?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Hotel</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe"> Cabaña</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">Hostería</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">Camping</label>
+                <br>
+            </div>
+            <div id="improvement">
+                <p>¿Cómo es el servicio en el hospedaje que ha contratado? (select an option)</p>
+                <input type="checkbox" id="front-end" value="front-end">
+                <label for="front-end"> Excelente</label>
+                <br>
+                <input type="checkbox" id="back-end" value="back-end">
+                <label for="back-end">Muy Bueno</label>
+                <br>
+                <input type="checkbox" id="data-visulization" value="data-visulization">
+                <label for="data-visulization">Regular</label>
+                <br>
+                <input type="checkbox" id="challenges" value="challenges">
+                <label for="challenges">Malo</label>
+                <br>               
+            </div>
+
+            <div class="recommend">
+                <p>¿Recibió material informativo de la Secretaría de Turismo en el hospedaje donde se alojó?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Si</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">No</label>
+                <br>
+            <div class="main-input">
+                    <label for="city" id="city-label"> Cual?</label><br>
+                    <input type="city" id="city" required placeholder="here">
+            </div>
+            </div>
+
+            <div class="recommend">
+                <p>¿Ud. pidió información en las oficinas de Turismo de Rio Ceballos?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Si</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">No</label>
+                <br>
+            <div class="main-input">
+                    <label for="city" id="city-label"> En cual?</label><br>
+                    <input type="city" id="city" required placeholder="here">
+            </div>
+            </div>
+
+            <div class="main-input">
+                <p>¿Qué tipo de Información solicitó en las Oficinas de Turismo de Rio Ceballos?</p>
+                <select id="dropdown">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="student">Hospedaje</option>
+                    <option value="full-time-job">Gastronomía</option>
+                    <option value="full-time-learner">Servicios</option>
+                    <option value="prefer-not-to-say">Paseos</option>
+                    <option value="student">Rutas</option>
+                    <option value="full-time-learner">Turismo Aventura</option>
+                    <option value="student">Eventos</option>
+                    <option value="other">Otros</option>
+                </select>
+            </div>
+
+            <div class="main-input">
+                <p>¿A través de que medio solicito informacion en las Oficinas de Turismo de Rio Ceballos?</p>
+                <select name="" id="">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="challenges">Personalmente</option>
+                    <option value="projects">Vía mail</option>
+                    <option value="community">Via Facebook</option>
+                    <option value="open-source">Via telefonica</option>
+                    <option value="other">Otros</option>
+                </select>
+            </div>
+
+            <div class="recommend">
+                <p>¿Que tipo de material se le entregó en la Oficina de Turismo?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Folleto</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">Revista</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">Planos</label>
+                <br>
+                <input type="radio" id="not-sure" name="recommend" value="Not sure">
+                <label for="not-sure">Calcomanías</label>
+                <br>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Guía de Servicios</label>
+                <br>
+            </div>
+
+            <div id="improvement">
+                <p>¿Como evalúa el tipo de informacion brindada por las Oficinas de Turismo de Rio Ceballos? (select an option)</p>
+                <input type="checkbox" id="front-end" value="front-end">
+                <label for="front-end"> Excelente</label>
+                <br>
+                <input type="checkbox" id="back-end" value="back-end">
+                <label for="back-end">Muy Bueno</label>
+                <br>
+                <input type="checkbox" id="data-visulization" value="data-visulization">
+                <label for="data-visulization">Regular</label>
+                <br>
+                <input type="checkbox" id="challenges" value="challenges">
+                <label for="challenges">Malo</label>
+                <br>               
+            </div>
+
+            <div class="recommend">
+                <p>¿Aparte de la información solicitada, se le brindó algún otro tipo de información de su interés?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Si</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">No</label>
+                <br>
+            </div>
+
+            <div class="main-input">
+                <p>¿Que información se le brindo?</p>
+                <select id="dropdown">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="student">Espectáculos en Rio Ceballos</option>
+                    <option value="full-time-job">Espectáculos en localidades cercanas</option>
+                    <option value="full-time-learner">Actividades deportivas</option>
+                    <option value="full-time-learner">Turismo Aventura</option>
+                    <option value="full-time-learnert">Paseos</option>
+                    <option value="other">Otros</option>
+                </select>
+            </div>
+            <!-- <div class="main-input">
+                <label for="city" id="city-label"> Cual?</label><br>
+                <input type="city" id="city" required placeholder="here">
+            </div>    -->
+            <div class="recommend">
+                <p>Considera a Rio Ceballos como un destino completo en cuanto a su oferta y servicios?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Si</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">No</label>
+                <br>
+            <div class="main-input">
+                    <label for="city" id="city-label"> Cual?</label><br>
+                    <input type="city" id="city" required placeholder="here">
+            </div>
+            </div>
+            
+            <div class="recommend">
+                <p>¿Recomendaría Rio Ceballos como destino turístico?</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Si</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">No</label>
+                <br>
+            <div class="main-input">
+                    <label for="city" id="city-label"> Cual?</label><br>
+                    <input type="city" id="city" required placeholder="here">
+            </div>
+            </div>
+
+            <div>
+                <p>Algun comentario o recomendación?</p>
+                <textarea cols="15" rows="5" placeholder="Ingrese su comentario aqui..."></textarea>
+            </div>
+
+             <p class="text-center textoBd">Preguntas de la Base de Datos</p>
+
+            <!-- Preguntas de la BD -->
+            <section *ngFor="let pregunta of listPreguntas" class="row">
+                <div class="col-md-12 ">
+                <section class="row">
+                    <div class="col-md-8">
+                    <p class="preguntas">{{ pregunta.question }}</p>
+                    </div>
+                    <div class="col-md-4 select-dropdown">
+                        <select>
+                            <option value="Really Good">Muy Buena</option>
+                            <option value="Good">Buena</option>
+                            <option value="Meh">Regular</option>
+                            <option value="Bad">Mala</option>
+                            <option value="So Bad">Muy Mala</option>
+                            <option value="No">No Responde</option>
+                        </select>
+                    </div>
+                </section>
+                </div>
+            </section>
+            <!-- Preguntas BD -->
+
+              <!--  Otra forma de dar respuestas  -->
+            <p class="text-center textoBd">Otra manera de dar respuestas</p>
+
+            <div *ngFor="let pregunta of listPreguntas" class="recommend">
+                <p class="preguntas">{{ pregunta.question }}</p>
+                <input type="radio" id="definitely" name="recommend" value="Definitely">
+                <label for="definitely">Si</label>
+                <br>
+                <input type="radio" id="maybe" name="recommend" value="Maybe">
+                <label for="maybe">No</label>
+                <br>
+                    <div class="main-input">
+                            <label for="city" id="city-label"> Cual?</label><br>
+                            <input type="city" id="city" required placeholder="here">
+                    </div>
+            </div>
+
+            <br>
+
+            <p id="description">Gracias por su Colaboración</p>
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+      </main>
+
+      <br>
+
+      <app-footer></app-footer>

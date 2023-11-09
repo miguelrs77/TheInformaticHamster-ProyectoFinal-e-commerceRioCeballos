@@ -1,5 +1,6 @@
-const RespuestaModel = require('../models/respuesta.model');
+const RespuestaModel = require('../models/answer.model');
 
+// TODO: ERROR CATCH BUT NOT DOING ANYTHING WITH IT. MUST EDIT ERROR MESSAGE.
 // CREATE RESPUESTA
 const createRespuesta = async (respuestaOptions) => {
   try {
@@ -34,6 +35,8 @@ const findRespuestas = async (options) => {
   }
 };
 
+// TODO: se hace un await del get, pero no se guarda el resultado en ninguna variable
+// TODO: PARA QUE ESTABA ESTO ?
 // UPDATE RESPUESTA BY ID
 const putRespuesta = async (respuestaId, respuestaOptions) => {
   try {
@@ -51,7 +54,7 @@ const putRespuesta = async (respuestaId, respuestaOptions) => {
 // DELETE RESPUESTA
 const deleteRespuesta = async (respuestaId) => {
   try {
-    return respuestaModel.destroy({ where: { id: respuestaId } });
+    return RespuestaModel.destroy({ where: { id: respuestaId } });
   } catch (error) {
     throw error;
   }
