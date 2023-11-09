@@ -82,17 +82,7 @@ Autenticación y Autorización
 -
 Se empleó el protocolo JWT (JSON Web Token) para gestionar la autenticación y autorización de usuarios. Solo los Administradores tienen acceso al Dashboard y la sección de encuestas con operaciones CRUD, mientras que los Encuestadores solo pueden acceder a la sección de encuestas.
 
-Modelos y Referencias
--
-Se proporcionan los siguientes modelos y referencias:
 
-Modelo de Encuestas para Usuarios: (Link / Youtube)
-
-Modelo de Login: (Front-End / Back-End / Youtube)
-
-Modelo del Dashboard: (GitHub / Youtube)
-
-Modelo CRUD de Encuestas: (Front-End / Back-End / Youtube)
 
 Próximos Pasos
 -
