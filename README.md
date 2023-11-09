@@ -23,7 +23,7 @@ Dentro del archivo package.json estan los scripts:
 
 4) En la carpeta Back-End Ejecutando el comando npm run dev (Va a ejecutar el proyecto)
                           
-5) En la carpeta Front-End ejecutando el comando ng serve (Van a ejecutar la App)
+5) En la carpeta Front-End ejecutando el comando ng serve o el algunos casos lo toma como npm run ng serve (Van a ejecutar la App)
 
 
 Proyecto Final UTN
