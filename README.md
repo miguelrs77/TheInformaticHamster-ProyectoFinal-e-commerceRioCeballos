@@ -7,43 +7,41 @@
 </p>
 
 
-(Importante) - 
+Título del Proyecto:
+"Descubre Río Ceballos: Página Web de Turismo y Tienda de Recuerdos" - 
 -
-Dentro del del Back y el Front leer el archivo readme para poder ejecutar de forma correcto el proyecto 
-(Importante para desplegar la App)
+Descripción:
+Este proyecto es una página web dedicada a destacar los encantos de Río Ceballos, Córdoba, como destino turístico. La plataforma incluye una tienda en línea donde los visitantes pueden adquirir recuerdos auténticos de la ciudad. Además, se ofrece una sección de encuestas de satisfacción para recopilar comentarios valiosos y mejorar continuamente la experiencia del usuario.
+
 -
-1) Primero ejecuten en la carpeta Front-End y Back-End el comando (npm i) para instalar todas las dependencias necesarias.
+Tecnologías Utilizadas:
+Node.js
+TypeScript
+Angular
+MySQL
+Bootstratp
+Cloudinary
 
-2) En la carpeta Back-End npm run typescript (Que va a visualizar los cambios generados)
-
-3) En la carpeta Back-End hay una archivo llamado .env que dentro trae una archivo conection.TS, ahi dentro deben colocar el nombre de usuario que tienen en MySQL (por dafault: root), el nombre de la base de datos (que debe ser creada con anterioridad) y la misma contraseña con la que abren el MySQL Workbench...   
-
-4) En la carpeta Back-End Ejecutando el comando npm run dev (Va a ejecutar el proyecto)
-                          
-5) En la carpeta Front-End ejecutando el comando ng serve o el algunos casos lo toma como npm run ng serve (Van a ejecutar la App)
-
-
-Proyecto Final UTN
 -
-Documentación de la Aplicación Web Rio Ceballos
-Resumen
-Este documento detalla el proceso de desarrollo de la Aplicación Web Rio Ceballos, una plataforma informativa diseñada para tres tipos de roles: Usuario, Encuestador y Administrador. 
-La aplicación ofrece funcionalidades específicas a cada uno de estos roles, con un enfoque en la claridad, estética y usabilidad.
-
-Requerimientos
-La Aplicación Web Rio Ceballos se desarrolló con los siguientes requerimientos principales:
-
-Creación de una aplicación informativa.
-Implementación de tres roles: Usuario, Encuestador y Administrador.
-Diseño Inicial
-Para comenzar el proyecto, se realizó una fase de diseño que involucró la creación de una maqueta del Front-End. 
-Esta maqueta permitió visualizar y planificar las funcionalidades necesarias para garantizar la claridad y la atractiva presentación de la aplicación.
-
-Roles y Funcionalidades
-
-Próximos Pasos
+Instalación:
+Clona este repositorio.
+Instala las dependencias usando npm: npm install
+Configura la base de datos MySQL con el script proporcionado.
+Ejecuta el servidor con: npm run dev
+Accede a la aplicación desde tu navegador
+Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front
 -
-Con la base sólida implementada, los siguientes pasos incluirán:
+Uso:
+Explora las atracciones turísticas de Río Ceballos.
+Navega por la tienda en línea y adquiere recuerdos auténticos.
+Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.
 
-Ampliar las funcionalidades existentes.
-Implementar mejoras adicionales para enriquecer la experiencia del usuario.
+-
+Estado del Proyecto:
+Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.
+-
+Contacto:
+Correo Electrónico: [miguelr.s77@gmail.com]
+Issues en GitHub: [link to issues]
+
+
