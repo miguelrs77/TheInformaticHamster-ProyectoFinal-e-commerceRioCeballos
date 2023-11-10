@@ -14,34 +14,62 @@ Descripción:
 Este proyecto es una página web dedicada a destacar los encantos de Río Ceballos, Córdoba, como destino turístico. La plataforma incluye una tienda en línea donde los visitantes pueden adquirir recuerdos auténticos de la ciudad. Además, se ofrece una sección de encuestas de satisfacción para recopilar comentarios valiosos y mejorar continuamente la experiencia del usuario.
 
 -
-Tecnologías Utilizadas:
-Node.js-
-TypeScript-
-Angular-
-MySQL-
-Bootstratp-
-Cloudinary-
+
+Tecnologías Utilizadas:<br>
+
+Node.js-     <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" /> <br>
+TypeScript-  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" /> <br>
+Angular-     <img alt="angular" src="https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white" /> <br>
+MySQL-       <img alt="MySQL" src="https://img.shields.io/badge/-MySQL-45b8d8?style=flat-square&logo=react&logoColor=white" /> <br>
+Bootstrap-   <img alt="Bootstrap" src="https://img.shields.io/badge/-Bootstrap-DD0031?style=flat-square&logo=angular&logoColor=white" /> <br>
+Cloudinary-  <img alt="Cloudinary" src="https://img.shields.io/badge/-Cloudinary-DD0031?style=flat-square&logo=angular&logoColor=white" /> <br>
 
 -
-Instalación:
-Clona este repositorio.-
-Instala las dependencias usando npm: npm install-
-Configura la base de datos MySQL con el script proporcionado.-
-Ejecuta el servidor con: npm run dev.-
-Accede a la aplicación desde tu navegador.-
-Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front.-
--
-Uso:
-Explora las atracciones turísticas de Río Ceballos.-
-Navega por la tienda en línea y adquiere recuerdos auténticos.-
-Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.-
+Instalación:<br>
+<b>Clona este repositorio.</b> <br>
+<br>
+Instala las dependencias usando npm: <br>
+<!--START_SECTION:waka-->
+
+```txt
+npm install
+```
+
+<!--END_SECTION:waka-->
+
+Configura la base de datos MySQL con el script proporcionado.-<br>
+<br>
+Ejecuta el servidor con:<br>
+```txt
+npm run dev
+```
+
+<!--END_SECTION:waka-->
+
+Accede a la aplicación desde tu navegador.-<br>
+<br>
+<B>Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front.-<B> <br>
+
 
 -
-Estado del Proyecto:
-Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.
+<b>Uso:<b><br>
+
+<b>Explora las atracciones turísticas de Río Ceballos.-<b><br>
+
+<b>Navega por la tienda en línea y adquiere recuerdos auténticos.-<b><br>
+
+<b>Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.-<b><br>
+
 -
-Contacto:
-Correo Electrónico: [miguelr.s77@gmail.com].-
-Issues en GitHub: [link to issues].-
+<b>Estado del Proyecto:<b><br>
+
+<b>Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.<b><br>
+
+-
+Contacto: <br>
+Correo Electrónico: [miguelr.s77@gmail.com].- <a href="mailto:miguelr.s77@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /><br>
+
+Correo Electrónico: [quispemarceloalejandro@gmail.com].- <a href="mailto:quispemarceloalejandro@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /><br>
+Issues en GitHub: [link to issues].-<br>
 
 
