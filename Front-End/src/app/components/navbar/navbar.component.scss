@@ -1,0 +1,83 @@
+// Botones del Navbar
+.button-nabvar {
+  background-color:white;
+  color: black;
+  border-radius: 10em;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 1em 2em;
+  letter-spacing: 1.5px;
+  margin: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.button-nabvar:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 rgb(17, 148, 57);
+  
+};
+
+.button-nabvar:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+
+// Botones LogIn SingUp
+.button-su-li {
+  padding: 1.3em 3em;
+  font-size: 8px;
+  margin: 1px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-su-li:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-su-li:active {
+  transform: translateY(-1px);
+}
+// BUTTON LOGOUT
+.button-logout {
+  padding: 1.3em 3em;
+  font-size: 8px;
+  margin: 1px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-logout:hover {
+  background-color: #c42323;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-logout:active {
+  transform: translateY(-1px);
+}
