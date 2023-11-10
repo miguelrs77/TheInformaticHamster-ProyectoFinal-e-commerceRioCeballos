@@ -10,8 +10,9 @@
 Título del Proyecto:
 "Descubre Río Ceballos: Página Web de Turismo y Tienda de Recuerdos" - 
 -
-Descripción:
-Este proyecto es una página web dedicada a destacar los encantos de Río Ceballos, Córdoba, como destino turístico. La plataforma incluye una tienda en línea donde los visitantes pueden adquirir recuerdos auténticos de la ciudad. Además, se ofrece una sección de encuestas de satisfacción para recopilar comentarios valiosos y mejorar continuamente la experiencia del usuario.
+<b>Descripción:<b><br>
+Este proyecto es una página web dedicada a destacar los encantos de Río Ceballos, Córdoba, como destino turístico. La plataforma incluye una tienda en línea donde los visitantes pueden adquirir recuerdos auténticos de la ciudad.<br> 
+Además, se ofrece una sección de encuestas de satisfacción para recopilar comentarios valiosos y mejorar continuamente la experiencia del usuario.
 
 -
 
