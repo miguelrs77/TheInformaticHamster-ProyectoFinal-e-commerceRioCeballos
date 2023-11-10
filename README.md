@@ -52,17 +52,24 @@ Accede a la aplicación desde tu navegador.-<br>
 
 
 -
-Uso:
-Explora las atracciones turísticas de Río Ceballos.-
-Navega por la tienda en línea y adquiere recuerdos auténticos.-
-Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.-
+<b>Uso:<b><br>
+
+<b>Explora las atracciones turísticas de Río Ceballos.-<b><br>
+
+<b>Navega por la tienda en línea y adquiere recuerdos auténticos.-<b><br>
+
+<b>Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.-<b><br>
 
 -
-Estado del Proyecto:
-Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.
+<b>Estado del Proyecto:<b><br>
+
+<b>Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.<b><br>
+
 -
 Contacto: <br>
 Correo Electrónico: [miguelr.s77@gmail.com].- <a href="mailto:miguelr.s77@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /><br>
+
+Correo Electrónico: [quispemarceloalejandro@gmail.com].- <a href="mailto:quispemarceloalejandro@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /><br>
 Issues en GitHub: [link to issues].-<br>
 
 
