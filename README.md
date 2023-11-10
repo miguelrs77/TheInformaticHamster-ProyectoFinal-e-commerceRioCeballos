@@ -16,6 +16,7 @@ Este proyecto es una página web dedicada a destacar los encantos de Río Ceball
 -
 
 Tecnologías Utilizadas:<br>
+
 Node.js-     <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" /> <br>
 TypeScript-  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" /> <br>
 Angular-     <img alt="angular" src="https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular&logoColor=white" /> <br>
@@ -24,13 +25,32 @@ Bootstrap-   <img alt="Bootstrap" src="https://img.shields.io/badge/-Bootstrap-D
 Cloudinary-  <img alt="Cloudinary" src="https://img.shields.io/badge/-Cloudinary-DD0031?style=flat-square&logo=angular&logoColor=white" /> <br>
 
 -
-Instalación:
-Clona este repositorio.-
-Instala las dependencias usando npm: npm install-
-Configura la base de datos MySQL con el script proporcionado.-
-Ejecuta el servidor con: npm run dev.-
-Accede a la aplicación desde tu navegador.-
-Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front.-
+Instalación:<br>
+<b>Clona este repositorio.</b> <br>
+<br>
+Instala las dependencias usando npm: <br>
+<!--START_SECTION:waka-->
+
+```txt
+npm install
+```
+
+<!--END_SECTION:waka-->
+
+Configura la base de datos MySQL con el script proporcionado.-<br>
+<br>
+Ejecuta el servidor con:<br>
+```txt
+npm run dev
+```
+
+<!--END_SECTION:waka-->
+
+Accede a la aplicación desde tu navegador.-<br>
+<br>
+<B>Para mas especificaciones leer el readme en la carpeta Back y en la carpeta Front.-<B> <br>
+
+
 -
 Uso:
 Explora las atracciones turísticas de Río Ceballos.-
@@ -41,8 +61,8 @@ Participa en nuestras encuestas de satisfacción para ayudarnos a mejorar.-
 Estado del Proyecto:
 Actualmente su desarollo esta finalizado aunque es api escalable. Se aceptan contribuciones y comentarios.
 -
-Contacto:
-Correo Electrónico: [miguelr.s77@gmail.com].-
-Issues en GitHub: [link to issues].-
+Contacto: <br>
+Correo Electrónico: [miguelr.s77@gmail.com].- <a href="mailto:miguelr.s77@gmail.com"><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /><br>
+Issues en GitHub: [link to issues].-<br>
 
 
