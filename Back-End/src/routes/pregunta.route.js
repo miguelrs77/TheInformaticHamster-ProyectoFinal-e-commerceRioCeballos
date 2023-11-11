@@ -1,11 +1,12 @@
 const { Router } =require('express');
 const router = Router();
-const { postPregunta, getPregunta, getPreguntas, updatePregunta, deletePregunta } = require('../controllers/preguntas.controller');
+const { authIsAdmin } = require('../middleware');
+const { createPregunta, getIdPregunta, findPreguntas, putPregunta, deletePregunta } = require('../controllers/pregunta.controller');
 
-router.post('/', postPregunta);
-router.get('/:preguntaId', getPregunta);
-router.get('/', getPreguntas);
-router.put('/:preguntaId', updatePregunta);
-router.delete('/:preguntaId', deletePregunta);
+router.post('/', createPregunta);
+router.get('/:preguntaId', getIdPregunta);
+router.get('/', findPreguntas);
+router.put('/:preguntaId', authIsAdmin, putPregunta);
+router.delete('/:preguntaId', authIsAdmin, deletePregunta);
 
 module.exports = router;

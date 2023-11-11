@@ -8,7 +8,7 @@ import { PreguntaService } from 'src/app/services/pregunta.service';
   templateUrl: './encuesta-crud.component.html',
   styleUrls: ['./encuesta-crud.component.scss']
 })
-export class EncuestaCrudComponent implements OnInit {
+export class SurveyCrudComponent implements OnInit {
   listPreguntas: Pregunta[] = []
   //loading: boolean = false;
 

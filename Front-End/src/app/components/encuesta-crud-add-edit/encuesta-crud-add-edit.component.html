@@ -6,10 +6,10 @@
             <div class="card-body">
                 <form [formGroup]="formPreguntas" (ngSubmit)="addPregunta()">    
                    
-                    <input formControlName="category" type="text" class="form-control mt-3" placeholder="Categoria">
+                    <!-- <input formControlName="category" type="text" class="form-control mt-3" placeholder="Categoria">
                     <span *ngIf="formPreguntas.get('category')?.hasError('required') && formPreguntas.get('category')?.touched">
                         La <strong>Categoria</strong> es requerida
-                    </span>
+                    </span> -->
 
                     <input formControlName="question" type="text" class="form-control mt-3" placeholder="Pregunta">
                     <span *ngIf="formPreguntas.get('question')?.hasError('required') && formPreguntas.get('question')?.touched">
@@ -18,7 +18,7 @@
                     
                     <div class="row mt-3 text-center">
                         <div class="col-lg-6">
-                            <button routerLink="/encrud" type="button" class="btn btn-secondary">Volver</button>
+                            <button routerLink="/survey" type="button" class="btn btn-secondary">Volver</button>
                         </div>
                         <div class="col-lg-6">
                             <button [disabled]="formPreguntas.invalid" type="submit" class="btn btn-success">Aceptar</button>

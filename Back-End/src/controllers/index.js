@@ -1,16 +1,13 @@
-const { loginAdmin, newAdmin } = require("./admin.controller");
-const { loginEncuestador, newEncuestador } = require('./encuestador.controller');
-const { deletePregunta, getPregunta, getPreguntas, postPregunta, updatePregunta } = require('./preguntas.controller');
-const { createInfoCard, getIdInfoCard, findInfoCards, putInfoCard, deleteInfoCard } = require('./infoCard.controller');
-const { createEncuesta, getIdEncuesta, findEncuestas, putEncuesta, deleteEncuesta } = require('./encuesta.controller');
+const { createPregunta, getIdPregunta, findPreguntas, putPregunta, deletePregunta } = require('./pregunta.controller');
+const { createInfoCard, getInfoCardId, findInfoCards, updateInfoCard, deleteInfoCard } = require('./infoCard.controller');
+const { createSurvey, getSurveyId, findSurveys, updateSurvey, deleteSurvey } = require('./survey.controller');
 const { createRespuesta, getIdRespuesta, findRespuestas, putRespuesta, deleteRespuesta } = require('./respuesta.controller');
-
+const { getUserId, findUsers, updateUser, deleteUser } = require('./user.controller');
 
 module.exports = {
-  adminController: { loginAdmin, newAdmin },
-  encuestadorController: { loginEncuestador, newEncuestador },
-  preguntaController: { deletePregunta, getPregunta, getPreguntas, postPregunta, updatePregunta },
-  infoCardController: { createInfoCard, getIdInfoCard, findInfoCards, putInfoCard, deleteInfoCard },
-  encuestaController: { createEncuesta, getIdEncuesta, findEncuestas, putEncuesta, deleteEncuesta },
-  respuestaController: { createRespuesta, getIdRespuesta, findRespuestas, putRespuesta, deleteRespuesta }
+  preguntaController: { createPregunta, getIdPregunta, findPreguntas, putPregunta, deletePregunta },
+  infoCardController: { createInfoCard, getInfoCardId, findInfoCards, updateInfoCard, deleteInfoCard },
+  surveyController: { createSurvey, getSurveyId, findSurveys, updateSurvey, deleteSurvey },
+  respuestaController: { createRespuesta, getIdRespuesta, findRespuestas, putRespuesta, deleteRespuesta },
+  userController: { getUserId, findUsers, updateUser, deleteUser },
 };

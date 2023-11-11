@@ -1,6 +1,7 @@
  /* Carousel altura */
  .c-item {
     height: 500px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   /* Carousel IMG */
@@ -10,25 +11,32 @@
     filter: brightness(0.7);
   }
   
-  /* Texto Principal de la Historia de Mina Clavero */
+  /* Texto Principal de la Historia de Rio Ceballos */
   .history-text {
       padding: 50px;
       font-size: 32px;
+  }
+
+  .blockquote-footer{
+    color: white;
+    font-weight: 5px;  
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 34px;
   }
   
   .text-container {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
     text-align: center;
   }
 
-  /* Texto Secundario de la Historia de Mina Clavero */
+  /* Texto Secundario de la Historia de Rio Ceballos */
   .text-important {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #333;
+    color: #111111;
     line-height: 1.5;
     margin: 0;
     font-weight: bold;
@@ -46,12 +54,17 @@
 
   .card-image {
     max-width: 100%;
-    max-height: 175px;
-  }
+    max-height: 265px;
+  } 
 
   .card:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.02);
     transition: transform 0.3s ease;
   }
-  
+
+  .fondo{
+    background-image: linear-gradient(115deg, rgba(18, 26, 51, 0.438) , #023372cc, rgba(71, 71, 170, 0.7) ), url("../../../assets/imgs/RioCentro3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

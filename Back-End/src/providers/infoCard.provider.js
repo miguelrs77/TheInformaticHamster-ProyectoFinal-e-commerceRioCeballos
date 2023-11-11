@@ -1,5 +1,6 @@
 const InfoCardModel = require('../models/infoCard.model');
 
+// TODO: ERROR CATCH BUT NOT DOING ANYTHING WITH IT. MUST EDIT ERROR MESSAGE.
 // CREATE INFOCARD
 const createInfoCard = async (infoCardOptions) => {
   try {
@@ -11,7 +12,7 @@ const createInfoCard = async (infoCardOptions) => {
 };
 
 // GET INFOCARD BY ID
-const getIdInfoCard = async (id) => {
+const getInfoCardId = async (id) => {
   try {
     const infoCard = await InfoCardModel.findByPk(id, { include: [{ all: true }] });
     if (infoCard) {
@@ -28,18 +29,18 @@ const getIdInfoCard = async (id) => {
 const findInfoCards = async (options) => {
   try {
     const infoCards = await InfoCardModel.findAll(options);
-    // const infoCardsArray = Array.isArray(infoCards) ? infoCards : [infoCards];
-    // console.log(infoCards);
     return infoCards;
   } catch (error) {
     throw error;
   }
 };
 
+// TODO: se hace un await del get, pero no se guarda el resultado en ninguna variable
+// TODO: PARA QUE ESTABA ESTO ?
 // UPDATE INFOCARD BY ID
-const putInfoCard = async (infoCardId, infoCardOptions) => {
+const updateInfoCard = async (infoCardId, infoCardOptions) => {
   try {
-    await getIdInfoCard(infoCardId);
+    await getInfoCardId(infoCardId);
     const [numRowsUpdated] = await InfoCardModel.update(infoCardOptions, {
       where: { id: infoCardId },
     });
@@ -53,16 +54,32 @@ const putInfoCard = async (infoCardId, infoCardOptions) => {
 // DELETE INFOCARD
 const deleteInfoCard = async (infoCardId) => {
   try {
-    return infoCardModel.destroy({ where: { id: infoCardId } });
+    return InfoCardModel.destroy({ where: { id: infoCardId } });
+  } catch (error) {
+    throw error;
+  }
+};
+
+// VALIDACION SI EXISTE INFOCARD EN DB
+const validateInfoCard = async (infoCardId) => {
+  try {
+    const infoCard = await InfoCardModel.findOne({ where: { id: infoCardId } });
+    if (infoCard) {
+      console.log(infoCard);
+      return infoCard;
+    } else {
+      return false;
+    }
   } catch (error) {
     throw error;
   }
 };
 
 module.exports = {
+  validateInfoCard,
   createInfoCard,
-  getIdInfoCard,
+  getInfoCardId,
   findInfoCards,
-  putInfoCard,
+  updateInfoCard,
   deleteInfoCard,
 };

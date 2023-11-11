@@ -1,0 +1,102 @@
+.custom-card {
+  width: 100%; 
+  margin: 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 175px;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border:2px solid;
+  border-radius: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #000000;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+  .card img {
+    height: 11em; 
+  }
+}
+
+
+@media (max-width: 767px) {
+  .card img {
+    height: 15em;
+  }
+}
+
+/* Texto Principal de la Historia de Mina Clavero */
+.history-text {
+  padding: 50px;
+  font-size: 32px;
+}
+
+/* Texto Principal de la Historia de Mina Clavero */
+.history-text {
+  padding: 50px;
+  font-size: 32px;
+}
+  
+.blockquote-footer {
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 34px;
+}
+
+.text-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+  /* Texto Secundario de la Historia de Mina Clavero */
+.text-important {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: bold;
+}
+
+.fondo {
+  background-image: linear-gradient(115deg, rgba(18, 26, 51, 0.438) , #023372cc, rgba(71, 71, 170, 0.7) ), url("../../../assets/imgs/RioCentro3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

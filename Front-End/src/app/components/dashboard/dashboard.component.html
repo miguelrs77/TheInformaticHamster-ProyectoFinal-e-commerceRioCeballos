@@ -1,3 +1,73 @@
-<app-bar-chart></app-bar-chart>
+<!-- Navbar -->
+<app-navbar-sec></app-navbar-sec>
+<!-- Fin Navbar -->
 
-<app-encuesta-crud></app-encuesta-crud>
+<div class="container">
+    <div class="dashboard">
+        <app-bar-chart></app-bar-chart>
+    </div>
+    <div class="preguntas">
+        <div class="container">
+            <div class="title">
+                <h1>Lista de Preguntas</h1>
+                <button type="button" class="btn btn-success" routerLink="/survey-add">Agregar Pregunta</button>        
+            </div>
+
+            <table *ngIf="listPreguntas.length > 0" class ="table table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Pregunta</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let pregunta of listPreguntas" class="table-active">
+                    <th scope="row">{{ pregunta.id }}</th>
+                    <td>{{ pregunta.question }}</td>
+                    <td>
+                        <button routerLink="/survey-edit/{{ pregunta.id }}" type="button" class="btn btn-info btn-sm">Editar</button>
+                        <button (click)="deletePregunta(pregunta.id!)" type="button" class="btn btn-danger btn-sm ms-2">Borrar</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <h5 *ngIf="listPreguntas.length == 0">No hay Preguntas para mostrar</h5>
+        </div>
+    </div>
+    <div class="info-card">
+        <div class="container">
+        <div class="title">
+            <h1>Lista de Cartas Informativas</h1>
+            <button type="button" class="btn btn-success" routerLink="/infocard-add">Agregar Carta Informativa</button>        
+        </div>
+
+        <table *ngIf="listInfoCards.length > 0" class ="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let infoCard of listInfoCards" class="table-active">
+                    <th scope="row">{{ infoCard.id }}</th>
+                    <td>{{ infoCard.category }}</td>
+                    <td>{{ infoCard.title }}</td>
+                    <td>{{ infoCard.description }}</td>
+                    <td>{{ infoCard.imageUrl }}</td>
+                    <td>
+                        <button routerLink="/infocard-edit/{{ infoCard.id }}" type="button" class="btn btn-info btn-sm">Editar</button>
+                        <button (click)="deleteInfoCard(infoCard.id!)" type="button" class="btn btn-danger btn-sm ms-2">Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <h5 *ngIf="listInfoCards.length == 0">No hay Carta Informativa para mostrar</h5>
+        </div>  
+    </div>
+</div>

@@ -1,15 +1,19 @@
-const adminRoute = require("./admin.route");
-const encuestadorRoute = require("./encuestador.route");
+const signUpRoute = require("./signUp.route");
+const loginRoute = require("./login.route");
 const infoCardRoute = require("./infoCard.route");
 const preguntaRoute = require("./pregunta.route");
 const respuestaRoute = require("./respuesta.route");
-const encuestaRoute = require("./encuesta.route");
+const surveyRoute = require("./survey.route");
+const userRoute = require("./user.route");
+const uploadRouter = require("./upload.route");
 
 module.exports = {
-  adminRoute,
-  encuestadorRoute,
+  signUpRoute,
+  loginRoute,
   preguntaRoute,
   infoCardRoute,
-  encuestaRoute,
+  surveyRoute,
   respuestaRoute,
+  userRoute,
+  uploadRouter
 };

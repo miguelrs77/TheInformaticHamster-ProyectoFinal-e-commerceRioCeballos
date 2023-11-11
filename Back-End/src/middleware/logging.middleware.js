@@ -1,8 +1,8 @@
-const mdwLogging = (req, res, next) => {
-  console.log(`Se hizo peticion al URL: ${req.url}`);
+const reqMessage = (req, res, next) => {
+  console.log(`Request URL: ${req.url}`);
   res.setHeader("Content-Type","Application/json");
   console.log(`Authorization: ${req.get("Authorization")}`);
   next();
 };
 
-module.exports = mdwLogging;
+module.exports = reqMessage;

@@ -7,7 +7,7 @@ import { PreguntaService } from 'src/app/services/pregunta.service';
   templateUrl: './encuesta.component.html',
   styleUrls: ['./encuesta.component.scss']
 })
-export class EncuestaComponent implements OnInit {
+export class SurveyComponent implements OnInit {
   listPreguntas: Pregunta[] = []
 
   constructor(private _preguntaService: PreguntaService) {  }
